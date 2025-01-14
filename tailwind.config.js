@@ -7,7 +7,17 @@ export default {
         "brookies-primary": "#5f2f32",
         "brookies-secondary": "#e2b5c2",
       },
+      animation: {
+        marquee: "marquee 30s linear infinite",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(134%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
+
   plugins: [require("daisyui")],
 };

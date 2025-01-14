@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "name": "Choco Chip Delight",
+    "price": 4.99,
+    "ratings": 120,
+    "images": [
+      "https://i.ibb.co.com/kc57Gyc/c1p2.jpg",
+      "https://i.ibb.co.com/xhMhbZs/c1p3.jpg",
+      "https://i.ibb.co.com/X3C3cW6/c1p1.jpg"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Double Fudge Bliss",
+    "price": 5.49,
+    "ratings": 85,
+    "images": [
+      "https://i.ibb.co.com/NCrzvMD/c2p3.jpg",
+      "https://i.ibb.co.com/zJPsR28/c2p1.jpg",
+      "https://i.ibb.co.com/GRbqN6y/c2p2.jpg"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Oatmeal Raisin Classic",
+    "price": 4.29,
+    "ratings": 97,
+    "images": [
+      "https://i.ibb.co.com/rs7Cjp3/c3p2.jpg",
+      "https://i.ibb.co.com/fGpgsGT/c3p3.jpg",
+      "https://i.ibb.co.com/8Pyx9Rr/c3p1.png"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Peanut Butter Crunch",
+    "price": 5.99,
+    "ratings": 143,
+    "images": [
+      "https://i.ibb.co.com/ZBy4xfK/c4p2.jpg",
+      "https://i.ibb.co.com/H4Qr9HB/c4p1.jpg"
+    ]
+  }
+]
