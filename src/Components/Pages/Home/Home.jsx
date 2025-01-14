@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Marquee from "./Marquee";
 import CookiesSection from "./CookiesSection";
 import Container from "../../Shared/Container";
+import PostcardsSection from "./PostcardsSection";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Marquee />
       <Container>
         <CookiesSection />
+        <PostcardsSection />
       </Container>
     </div>
   );

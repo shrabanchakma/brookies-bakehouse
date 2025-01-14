@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Vintage Landscape Postcard",
+    "price": 4.99,
+    "ratings": 120,
+    "image": "https://i.ibb.co.com/r2vC0JY/p1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Classic Floral Postcard",
+    "price": 3.99,
+    "ratings": 95,
+    "image": "https://i.ibb.co.com/dQzJV4d/p2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Modern Abstract Postcard",
+    "price": 5.49,
+    "ratings": 80,
+    "image": "https://i.ibb.co.com/CzHfhTX/p3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Elegant Architecture Postcard",
+    "price": 6.99,
+    "ratings": 110,
+    "image": "https://i.ibb.co.com/pPm7CLG/p4.jpg"
+  }
+]
