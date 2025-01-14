@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 const Container = ({ children }) => {
-  return <div className="max-w-[1536px]  mx-auto ">{children}</div>;
+  return <div className="max-w-[1800px] mx-auto relative">{children}</div>;
 };
 
 export default Container;

@@ -6,8 +6,10 @@ import Footer from "../Components/Shared/Footer";
 
 const MainLayout = () => {
   return (
-    <div>
-      {/* <Navbar /> */}
+    <div className="relative  ">
+      <Container>
+        <Navbar />
+      </Container>
       <Outlet />
       <Footer />
     </div>
