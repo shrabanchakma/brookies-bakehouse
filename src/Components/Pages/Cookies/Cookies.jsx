@@ -32,7 +32,7 @@ const Cookies = (props) => {
   }
   return (
     <div className="w-full mx-auto ">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  lg:gap-2 xl:gap-0 mt-16">
         {cookies &&
           cookies.length > 0 &&
           cookies.map((cookie) => <Cookie key={cookie.id} cookie={cookie} />)}

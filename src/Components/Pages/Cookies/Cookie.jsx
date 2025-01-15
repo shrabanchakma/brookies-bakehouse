@@ -1,40 +1,51 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
+
 const Cookie = ({ cookie }) => {
   return (
-    <div key={cookie.id} className=" w-96  hover:cursor-pointer">
-      <figure className="relative w-9/12 mx-auto">
+    <div
+      key={cookie.id}
+      className="w-full max-w-xs mx-auto hover:cursor-pointer"
+    >
+      <figure className="relative">
         <div className="relative">
           <img
             src={cookie.images[0]}
             alt={cookie.name}
-            className="object-cover h-96 w-full transition-opacity duration-300 ease-in-out hover:opacity-0"
+            className="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0"
           />
           <img
             src={cookie.images[1]}
             alt={`${cookie.name} hover`}
-            className="absolute top-0 left-0 object-cover h-96 w-full opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100"
+            className="absolute top-0 left-0 object-cover w-full h-64 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100"
           />
         </div>
       </figure>
-      <div className="p-3 pl-2 text-brookies-primary">
-        <h2>{cookie.name}</h2>
-        <p>${cookie.price.toFixed(2)} AUD</p>
+      <div className="p-3 text-brookies-primary">
+        <h2 className="text-lg font-semibold">{cookie.name}</h2>
+        <p className="text-sm font-medium">${cookie.price.toFixed(2)} AUD</p>
         <div className="flex items-center gap-2 mt-1">
-          <div className="flex items-center justify-between w-[4.5rem] text-brookies-secondary">
-            <FaStar size={10} />
-            <FaStar size={10} />
-            <FaStar size={10} />
-            <FaStar size={10} />
+          <div className="flex items-center text-brookies-secondary">
+            {[...Array(4)].map((_, i) => (
+              <FaStar key={i} size={14} />
+            ))}
           </div>
-          <p className="text-[.8rem]">({cookie.ratings})</p>
+          <p className="text-xs">({cookie.ratings})</p>
         </div>
       </div>
     </div>
   );
 };
 
-Cookie.propTypes = {};
+Cookie.propTypes = {
+  // cookie: PropTypes.shape({
+  //   id: PropTypes.number.isRequired,
+  //   name: PropTypes.string.isRequired,
+  //   price: PropTypes.number.isRequired,
+  //   ratings: PropTypes.number.isRequired,
+  //   images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  // }).isRequired,
+};
 
 export default Cookie;

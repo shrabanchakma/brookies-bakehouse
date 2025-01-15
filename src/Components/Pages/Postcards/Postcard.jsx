@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const Postcard = ({ postcard }) => {
   return (
-    <div key={postcard.id} className="w-96 hover:cursor-pointer">
+    <div key={postcard.id} className="w-80 xsm:w-96 hover:cursor-pointer">
       <figure className="relative w-9/12 mx-auto">
         <div className="relative">
           <img
@@ -32,13 +32,13 @@ const Postcard = ({ postcard }) => {
 };
 
 Postcard.propTypes = {
-  postcard: PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    ratings: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired,
-  }).isRequired,
+  // postcard: PropTypes.shape({
+  //   id: PropTypes.number.isRequired,
+  //   name: PropTypes.string.isRequired,
+  //   price: PropTypes.number.isRequired,
+  //   ratings: PropTypes.number.isRequired,
+  //   image: PropTypes.string.isRequired,
+  // }).isRequired,
 };
 
 export default Postcard;
