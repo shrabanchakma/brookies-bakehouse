@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Cookie Masterclass",
+    "image": "https://i.ibb.co.com/hVkMkNk/class1.png"
+  },
+  {
+    "id": 2,
+    "name": "Heart Cake Masterclass",
+    "image": "https://i.ibb.co.com/m9M9mLX/class2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Macaron Masterclass",
+    "image": "https://i.ibb.co.com/7VMKWxf/class3.jpg"
+  }
+]

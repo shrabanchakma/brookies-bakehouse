@@ -5,6 +5,8 @@ import CookiesSection from "./CookiesSection";
 import Container from "../../Shared/Container";
 import PostcardsSection from "./PostcardsSection";
 import MerchSection from "../Merch/MerchSection";
+import Carousel from "./Carousel";
+import ClassesSection from "./ClassesSection";
 
 const Home = () => {
   return (
@@ -15,6 +17,10 @@ const Home = () => {
         <CookiesSection />
         <MerchSection />
         <PostcardsSection />
+      </Container>
+      <Carousel />
+      <Container>
+        <ClassesSection />
       </Container>
     </div>
   );
