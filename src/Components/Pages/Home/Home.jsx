@@ -7,6 +7,8 @@ import PostcardsSection from "./PostcardsSection";
 import MerchSection from "../Merch/MerchSection";
 import Carousel from "./Carousel";
 import ClassesSection from "./ClassesSection";
+import FeaturedSection from "./FeaturedSection";
+import VisitUsSection from "./VisitUsSection";
 
 const Home = () => {
   return (
@@ -21,7 +23,9 @@ const Home = () => {
       <Carousel />
       <Container>
         <ClassesSection />
+        <FeaturedSection />
       </Container>
+      <VisitUsSection />
     </div>
   );
 };
