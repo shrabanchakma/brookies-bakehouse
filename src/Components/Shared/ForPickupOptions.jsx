@@ -3,27 +3,28 @@ import PropTypes from "prop-types";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-const ForDeliveryOptions = () => {
+
+const ForPickupOptions = (props) => {
   const closeDrawer = () => {
-    document.getElementById("my-drawer-2").checked = false;
+    document.getElementById("my-drawer-3").checked = false;
   };
 
   return (
     <div className="drawer ">
-      <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
+      <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
         <label
-          htmlFor="my-drawer-2"
+          htmlFor="my-drawer-3"
           className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer"
         >
-          Delivery
+          Pickup
           <RiArrowDropDownLine size={24} />
         </label>
       </div>
       <div className="drawer-side">
         <label
-          htmlFor="my-drawer-2"
+          htmlFor="my-drawer-3"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
@@ -36,7 +37,12 @@ const ForDeliveryOptions = () => {
           >
             <IoCloseOutline size={28} />
           </div>
-
+          <Link
+            to="/collections/cakes"
+            className={`uppercase text-brookies-primary font-bold text-4xl`}
+          >
+            cakes
+          </Link>
           <Link
             to="/collections/cookies"
             className="uppercase text-brookies-primary font-bold text-4xl"
@@ -49,7 +55,12 @@ const ForDeliveryOptions = () => {
           >
             brownies
           </Link>
-
+          <Link
+            to="/collections/cupcakes"
+            className={`uppercase text-brookies-primary font-bold text-4xl`}
+          >
+            cupcakes
+          </Link>
           <Link
             to="/collections/brownies"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
@@ -62,12 +73,18 @@ const ForDeliveryOptions = () => {
           >
             cards & candles
           </Link>
+          <Link
+            to="/collections/corporate-orders"
+            className={`uppercase text-brookies-primary font-bold text-4xl`}
+          >
+            corporate orders
+          </Link>
         </ul>
       </div>
     </div>
   );
 };
 
-ForDeliveryOptions.propTypes = {};
+ForPickupOptions.propTypes = {};
 
-export default ForDeliveryOptions;
+export default ForPickupOptions;

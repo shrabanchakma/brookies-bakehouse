@@ -1,6 +1,8 @@
 import React from "react";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import ForDeliveryOptions from "./ForDeliveryOptions";
+import ForPickupOptions from "./ForPickupOptions";
+import MenuOptions from "./MenuOptions";
 const Navbar = () => {
   return (
     <header className="top-0 z-50 absolute w-full ">
@@ -14,15 +16,7 @@ const Navbar = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-6 text-base-200">
             <ForDeliveryOptions />
-            <li>
-              <a
-                href="#pickup"
-                className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem]"
-              >
-                Pickup
-                <RiArrowDropDownLine size={24} />
-              </a>
-            </li>
+            <ForPickupOptions />
             <li>
               <a
                 href="#contact"
@@ -56,15 +50,7 @@ const Navbar = () => {
                 <RiArrowDropDownLine size={24} />
               </a>
             </li>
-            <li>
-              <a
-                href="#cart"
-                className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem]"
-              >
-                Menu
-                <RiArrowDropDownLine size={24} />
-              </a>
-            </li>
+            <MenuOptions />
           </ul>
         </nav>
       </div>
