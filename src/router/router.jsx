@@ -3,6 +3,8 @@ import MainLayout from "../Layout/MainLayout";
 import ErrorPage from "../Components/Shared/ErrorPage";
 import Home from "../Components/Pages/Home/Home";
 import Aboutus from "../Components/Pages/Aboutus";
+import CookiesPage from "../Components/Pages/Cookies/CookiesPage";
+import { cookiesLoader } from "../Loaders/cookiesLoader";
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,11 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <Aboutus />,
+      },
+      {
+        path: "/collections/cookies",
+        element: <CookiesPage />,
+        loader: cookiesLoader,
       },
     ],
   },

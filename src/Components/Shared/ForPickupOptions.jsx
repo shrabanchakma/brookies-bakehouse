@@ -4,7 +4,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
-const ForPickupOptions = (props) => {
+const ForPickupOptions = ({ isHomePage }) => {
   const closeDrawer = () => {
     document.getElementById("my-drawer-3").checked = false;
   };
@@ -16,7 +16,9 @@ const ForPickupOptions = (props) => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer-3"
-          className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer"
+          className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
+            isHomePage ? "" : "text-brookies-primary"
+          }`}
         >
           Pickup
           <RiArrowDropDownLine size={24} />

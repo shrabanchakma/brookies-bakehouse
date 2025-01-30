@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoCloseOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-const ForDeliveryOptions = () => {
+const ForDeliveryOptions = ({ isHomePage }) => {
   const closeDrawer = () => {
     document.getElementById("my-drawer-2").checked = false;
   };
@@ -15,7 +15,9 @@ const ForDeliveryOptions = () => {
         {/* Page content here */}
         <label
           htmlFor="my-drawer-2"
-          className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer"
+          className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
+            isHomePage ? "" : "text-brookies-primary"
+          }`}
         >
           Delivery
           <RiArrowDropDownLine size={24} />
@@ -38,12 +40,14 @@ const ForDeliveryOptions = () => {
           </div>
 
           <Link
+            onClick={closeDrawer}
             to="/collections/cookies"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >
             cookies
           </Link>
           <Link
+            onClick={closeDrawer}
             to="/collections/brownies"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >
@@ -51,12 +55,14 @@ const ForDeliveryOptions = () => {
           </Link>
 
           <Link
+            onClick={closeDrawer}
             to="/collections/brownies"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
           >
             merch
           </Link>
           <Link
+            onClick={closeDrawer}
             to="/collections/brownies"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >

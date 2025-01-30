@@ -3,24 +3,34 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 import ForDeliveryOptions from "./ForDeliveryOptions";
 import ForPickupOptions from "./ForPickupOptions";
 import MenuOptions from "./MenuOptions";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
   return (
-    <header className="top-0 z-50 absolute w-full ">
+    <header
+      className={`top-0 z-50 w-full ${isHomePage ? "absolute" : "relative"}`}
+    >
       <div className="container mx-auto py-5 px-4 flex justify-between items-center">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-brookies-primary">
+        <Link
+          to="/"
+          className="text-4xl font-bold text-brookies-primary uppercase"
+        >
           Brookie Bakehouse
-        </h1>
+        </Link>
 
         {/* Navigation */}
         <nav className="hidden md:block">
           <ul className="flex space-x-6 text-base-200">
-            <ForDeliveryOptions />
-            <ForPickupOptions />
+            <ForDeliveryOptions isHomePage={isHomePage} />
+            <ForPickupOptions isHomePage={isHomePage} />
             <li>
               <a
                 href="#contact"
-                className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem]"
+                className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
+                  isHomePage ? "" : "text-brookies-primary"
+                }`}
               >
                 Contact
                 <RiArrowDropDownLine size={24} />
@@ -29,7 +39,9 @@ const Navbar = () => {
             <li>
               <a
                 href="#cart"
-                className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem]"
+                className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
+                  isHomePage ? "" : "text-brookies-primary"
+                }`}
               >
                 Cart
                 <RiArrowDropDownLine size={24} />

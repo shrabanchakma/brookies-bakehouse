@@ -13,12 +13,12 @@ const Cookie = ({ cookie }) => {
           <img
             src={cookie.images[0]}
             alt={cookie.name}
-            className="object-cover w-full h-64 transition-opacity duration-300 ease-in-out hover:opacity-0"
+            className="object-cover w-full h-96 transition-opacity duration-300 ease-in-out hover:opacity-0"
           />
           <img
             src={cookie.images[1]}
             alt={`${cookie.name} hover`}
-            className="absolute top-0 left-0 object-cover w-full h-64 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100"
+            className="absolute top-0 left-0 object-cover w-full h-96 opacity-0 transition-opacity duration-300 ease-in-out hover:opacity-100"
           />
         </div>
       </figure>
