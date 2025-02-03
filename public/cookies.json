@@ -4,6 +4,7 @@
     "name": "Choco Chip Delight",
     "price": 4.99,
     "ratings": 120,
+    "inStock": true,
     "images": [
       "https://i.ibb.co.com/kc57Gyc/c1p2.jpg",
       "https://i.ibb.co.com/xhMhbZs/c1p3.jpg",
@@ -15,6 +16,7 @@
     "name": "Double Fudge Bliss",
     "price": 5.49,
     "ratings": 85,
+    "inStock": true,
     "images": [
       "https://i.ibb.co.com/NCrzvMD/c2p3.jpg",
       "https://i.ibb.co.com/zJPsR28/c2p1.jpg",
@@ -26,6 +28,7 @@
     "name": "Oatmeal Raisin Classic",
     "price": 4.29,
     "ratings": 97,
+    "inStock": true,
     "images": [
       "https://i.ibb.co.com/rs7Cjp3/c3p2.jpg",
       "https://i.ibb.co.com/fGpgsGT/c3p3.jpg",
@@ -37,9 +40,76 @@
     "name": "Peanut Butter Crunch",
     "price": 5.99,
     "ratings": 143,
+    "inStock": false,
     "images": [
       "https://i.ibb.co.com/ZBy4xfK/c4p2.jpg",
       "https://i.ibb.co.com/H4Qr9HB/c4p1.jpg"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Sugar Sprinkle Magic",
+    "price": 3.99,
+    "ratings": 64,
+    "inStock": true,
+    "images": [
+      "https://i.ibb.co.com/7d1z0g98/c5p2.webp",
+      "https://i.ibb.co.com/wZ9DP32h/c5p1.webp"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Almond Joy Bites",
+    "price": 6.49,
+    "ratings": 78,
+    "inStock": false,
+    "images": [
+      "https://i.ibb.co.com/xqRZ24sV/c6p2.webp",
+      "https://i.ibb.co.com/DgWHf0L1/c6p1.webp"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Cinnamon Swirl Dream",
+    "price": 4.79,
+    "ratings": 112,
+    "inStock": true,
+    "images": [
+      "https://i.ibb.co.com/BHdGgWhp/c7p2.webp",
+      "https://i.ibb.co.com/vCKdg1YS/c7p1.webp"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "White Chocolate Macadamia",
+    "price": 5.99,
+    "ratings": 95,
+    "inStock": true,
+    "images": [
+      "https://i.ibb.co.com/Y4qk2Q2c/c8p2.webp",
+      "https://i.ibb.co.com/jZTJmPzy/c8p1.webp"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Lemon Zest Drops",
+    "price": 4.49,
+    "ratings": 88,
+    "inStock": false,
+    "images": [
+      "https://i.ibb.co.com/7d1z0g98/c5p2.webp",
+      "https://i.ibb.co.com/b45HFHv/c9p1.webp"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Red Velvet Crunch",
+    "price": 6.99,
+    "ratings": 102,
+    "inStock": true,
+    "images": [
+      "https://i.ibb.co.com/WNCWkxTq/c10p2.webp",
+      "https://i.ibb.co.com/b45HFHv/c9p1.webp"
     ]
   }
 ]
