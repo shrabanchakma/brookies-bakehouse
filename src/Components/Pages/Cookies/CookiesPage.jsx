@@ -4,9 +4,12 @@ import Container from "../../Shared/Container";
 import CookiesFilter from "./CookiesFilter";
 import Cookie from "./Cookie";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
+import CookiesFilterMobile from "./CookiesFilterMobile";
 
 const CookiesPage = () => {
   const cookies = useLoaderData();
+  const inStockCount = cookies.filter((cookie) => cookie.inStock).length;
+  const outOfStockCount = cookies.filter((cookie) => !cookie.inStock).length;
   const navigation = useNavigation();
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6);
@@ -50,7 +53,7 @@ const CookiesPage = () => {
 
   return (
     <Container>
-      <div className="my-10">
+      <div className="mx-5 xl:mx-0 my-10">
         <h2 className="text-brookies-primary text-5xl font-bold py-8">
           Delivery
         </h2>
@@ -60,14 +63,24 @@ const CookiesPage = () => {
           ship.
         </p>
       </div>
-
+      <CookiesFilterMobile
+        filters={filters}
+        setFilters={setFilters}
+        inStockCount={inStockCount}
+        outOfStockCount={outOfStockCount}
+      />
       <div className="flex items-start w-full">
-        <div className="w-1/6 h-[25rem] sticky top-0">
-          <CookiesFilter filters={filters} setFilters={setFilters} />
+        <div className="h-[25rem] sticky top-0 hidden lg:block">
+          <CookiesFilter
+            filters={filters}
+            setFilters={setFilters}
+            inStockCount={inStockCount}
+            outOfStockCount={outOfStockCount}
+          />
         </div>
 
-        <div className="w-5/6 min-h-screen mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 lg:gap-2 xl:gap-0 mt-16">
+        <div className="xl:w-5/6 min-h-screen mx-auto ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 lg:gap-4 xl:gap-0 mt-16">
             {currentCookies.length > 0 ? (
               currentCookies.map((cookie) => (
                 <Cookie key={cookie.id} cookie={cookie} />

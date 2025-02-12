@@ -1,7 +1,12 @@
 import React from "react";
 import { FiDollarSign } from "react-icons/fi";
 
-const CookiesFilter = ({ filters, setFilters }) => {
+const CookiesFilter = ({
+  filters,
+  setFilters,
+  inStockCount,
+  outOfStockCount,
+}) => {
   return (
     <section className="h-full px-5 py-10">
       <div className="mb-6 text-brookies-primary">
@@ -20,7 +25,7 @@ const CookiesFilter = ({ filters, setFilters }) => {
               }
               className="checkbox checkbox-xs rounded-none"
             />
-            <span className="ml-2">In stock</span>
+            <span className="ml-2">{`In stock(${inStockCount})`}</span>
           </label>
           <label className="flex items-center">
             <input
@@ -34,7 +39,7 @@ const CookiesFilter = ({ filters, setFilters }) => {
               }
               className="checkbox checkbox-xs rounded-none"
             />
-            <span className="ml-2">Out of stock</span>
+            <span className="ml-2">{`Out of stock(${outOfStockCount})`}</span>
           </label>
         </div>
       </div>

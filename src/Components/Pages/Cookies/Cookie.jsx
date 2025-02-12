@@ -13,7 +13,7 @@ const Cookie = ({ cookie }) => {
           <img
             src={cookie.images[0]}
             alt={cookie.name}
-            className="object-cover w-full h-96 transition-opacity duration-300 ease-in-out hover:opacity-0"
+            className="object-cover w-full h-96 lg:h-72 xl:h-96 transition-opacity duration-300 ease-in-out hover:opacity-0"
           />
           <img
             src={cookie.images[1]}

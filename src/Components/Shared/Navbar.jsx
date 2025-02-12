@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Mobile Menu Button */}
         <nav className="block md:hidden">
           <ul className="flex space-x-6 text-base-200">
-            <li>
+            {/* <li>
               <a
                 href="#cart"
                 className="hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem]"
@@ -61,7 +61,7 @@ const Navbar = () => {
                 Cart
                 <RiArrowDropDownLine size={24} />
               </a>
-            </li>
+            </li> */}
             <MenuOptions />
           </ul>
         </nav>
