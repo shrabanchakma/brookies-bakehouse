@@ -9,13 +9,13 @@ const ForDeliveryOptions = ({ isHomePage }) => {
   };
 
   return (
-    <div className="drawer ">
+    <div className="drawer z-10">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
         <label
           htmlFor="my-drawer-2"
-          className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
+          className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer  ${
             isHomePage ? "" : "text-brookies-primary"
           }`}
         >
@@ -30,7 +30,7 @@ const ForDeliveryOptions = ({ isHomePage }) => {
           className="drawer-overlay"
         ></label>
 
-        <ul className="menu bg-brookies-secondary text-base-content min-h-full w-2/5 py-20 pl-10 pt-10 space-y-10">
+        <ul className="menu bg-brookies-secondary text-base-content min-h-full w-2/5 py-20 pl-10 pt-10 space-y-10 ">
           {/* Sidebar content here */}
           <div
             onClick={closeDrawer}
@@ -63,7 +63,7 @@ const ForDeliveryOptions = ({ isHomePage }) => {
           </Link>
           <Link
             onClick={closeDrawer}
-            to="/collections/brownies"
+            to="/collections/candles-cards"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >
             cards & candles

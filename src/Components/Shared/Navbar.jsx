@@ -9,13 +9,13 @@ const Navbar = () => {
   const isHomePage = location.pathname === "/";
   return (
     <header
-      className={`top-0 z-10 w-full ${isHomePage ? "absolute " : "relative"}`}
+      className={`top-0  w-full ${isHomePage ? "absolute " : "relative"}`}
     >
       <div className="container mx-auto py-5 px-4 flex justify-between items-center">
         {/* Logo */}
         <Link
           to="/"
-          className=" text-4xl font-bold text-brookies-primary uppercase"
+          className=" text-4xl font-bold text-brookies-primary uppercase "
         >
           Brookie Bakehouse
         </Link>

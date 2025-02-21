@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const MerchItem = ({ merch }) => {
   return (
-    <div className="hover:cursor-pointer mx-auto ">
+    <div className="hover:cursor-pointer mx-auto -z-10">
       <figure className="relative w-full">
         <img
           src={merch.image}

@@ -42,12 +42,12 @@ const MerchFilterMobile = ({
   };
 
   return (
-    <div className="drawer z-10">
+    <div className="drawer ">
       <input id="my-drawer-5" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content">
         <label
           htmlFor="my-drawer-5"
-          className="text-brookies-primary  flex items-center font-normal uppercase  cursor-pointer gap-2 bg-blue-200"
+          className="text-brookies-primary  flex items-center font-normal uppercase  cursor-pointer gap-2 "
         >
           <MdOutlineTune size={20} /> <span>Filter & Sort</span>
         </label>

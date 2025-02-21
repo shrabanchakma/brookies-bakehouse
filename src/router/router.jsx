@@ -7,6 +7,8 @@ import CookiesPage from "../Components/Pages/Cookies/CookiesPage";
 import { cookiesLoader } from "../Loaders/cookiesLoader";
 import MerchPage from "../Components/Pages/Merch/MerchPage";
 import { merchLoader } from "../Loaders/merchLoader";
+import CardsCandlesPage from "../Components/Pages/CardsCandles/CardsCandlesPage";
+import { cardsCandlesLoader } from "../Loaders/cardsCandlesLoader";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +33,11 @@ const router = createBrowserRouter([
         path: "/collections/merch",
         element: <MerchPage />,
         loader: merchLoader,
+      },
+      {
+        path: "/collections/candles-cards",
+        element: <CardsCandlesPage />,
+        loader: cardsCandlesLoader,
       },
     ],
   },
