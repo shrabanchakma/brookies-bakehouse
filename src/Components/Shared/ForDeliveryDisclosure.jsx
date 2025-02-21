@@ -29,11 +29,11 @@ const ForDeliveryDisclosure = (props) => {
                 brownies
               </Link>
 
-              <Link to="/collections/brownies" className="uppercase ">
+              <Link to="/collections/merch" className="uppercase ">
                 merch
               </Link>
               <Link
-                to="/collections/brownies"
+                to="/collections/cards-candles"
                 className="uppercase whitespace-nowrap"
               >
                 cards & candles

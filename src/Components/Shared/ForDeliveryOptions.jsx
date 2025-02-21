@@ -56,7 +56,7 @@ const ForDeliveryOptions = ({ isHomePage }) => {
 
           <Link
             onClick={closeDrawer}
-            to="/collections/brownies"
+            to="/collections/merch"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
           >
             merch

@@ -4,7 +4,7 @@
     "name": "Tote Bag",
     "price": 12.99,
     "ratings": 4.7,
-
+    "inStock": true,
     "image": "https://i.ibb.co.com/GcjwjH7/m1.png"
   },
   {
@@ -12,6 +12,7 @@
     "name": "Oven Mitt",
     "price": 9.99,
     "ratings": 4.8,
+    "inStock": false,
     "image": "https://i.ibb.co.com/cJsQfHy/m2.png"
   },
   {
@@ -19,6 +20,7 @@
     "name": "Brookies Cap",
     "price": 14.99,
     "ratings": 4.3,
+    "inStock": true,
     "image": "https://i.ibb.co.com/yhJTkDj/m3.png"
   },
   {
@@ -26,7 +28,7 @@
     "name": "Brookies Apron",
     "price": 19.99,
     "ratings": 4.5,
-
+    "inStock": false,
     "image": "https://i.ibb.co.com/Lx8BRYM/m4.jpg"
   }
 ]

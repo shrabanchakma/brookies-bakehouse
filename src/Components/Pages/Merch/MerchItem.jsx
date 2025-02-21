@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
 
-const Merch = ({ merch }) => {
+const MerchItem = ({ merch }) => {
   return (
-    <div className="w-80 hover:cursor-pointer mx-auto ">
+    <div className="hover:cursor-pointer mx-auto ">
       <figure className="relative w-full">
         <img
           src={merch.image}
           alt={merch.name}
-          className="object-cover h-80 w-full"
+          className="object-cover h-[30rem] w-full"
         />
       </figure>
       <div className="p-3 text-brookies-primary">
@@ -32,14 +32,4 @@ const Merch = ({ merch }) => {
   );
 };
 
-Merch.propTypes = {
-  //   merch: PropTypes.shape({
-  //     id: PropTypes.number.isRequired,
-  //     name: PropTypes.string.isRequired,
-  //     price: PropTypes.number.isRequired,
-  //     ratings: PropTypes.number.isRequired,
-  //     image: PropTypes.string.isRequired,
-  //   }).isRequired,
-};
-
-export default Merch;
+export default MerchItem;
