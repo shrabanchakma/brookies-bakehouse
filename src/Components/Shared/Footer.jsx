@@ -4,7 +4,7 @@ import { FaSquareInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <footer className=" text-brookies-primary py-6 px-4 h-96">
+    <footer className=" text-brookies-primary py-6 px-4 h-96 ">
       <div className="mx-auto grid grid-cols-1 lg:grid-cols-4 gap-8 h-3/4">
         <div className="col-span-1 flex flex-col items-center justify-center lg:items-start">
           <h4 className="font-bold text-lg mb-7">Visit Us:</h4>

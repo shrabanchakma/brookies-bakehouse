@@ -25,9 +25,6 @@ const ForDeliveryDisclosure = (props) => {
               <Link to="/collections/cookies" className="uppercase ">
                 cookies
               </Link>
-              <Link to="/collections/brownies" className="uppercase ">
-                brownies
-              </Link>
 
               <Link to="/collections/merch" className="uppercase ">
                 merch

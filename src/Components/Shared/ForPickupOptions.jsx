@@ -40,42 +40,49 @@ const ForPickupOptions = ({ isHomePage }) => {
             <IoCloseOutline size={28} />
           </div>
           <Link
+            onClick={closeDrawer}
             to="/collections/cakes"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
           >
             cakes
           </Link>
           <Link
+            onClick={closeDrawer}
             to="/collections/cookies"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >
             cookies
           </Link>
-          <Link
+          {/* <Link
+            onClick={closeDrawer}
             to="/collections/brownies"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >
             brownies
-          </Link>
+          </Link> */}
           <Link
+            onClick={closeDrawer}
             to="/collections/cupcakes"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
           >
             cupcakes
           </Link>
-          <Link
-            to="/collections/brownies"
+          {/* <Link
+            onClick={closeDrawer}
+            to="/collections/merch"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
           >
             merch
-          </Link>
+          </Link> */}
           <Link
-            to="/collections/brownies"
+            onClick={closeDrawer}
+            to="/collections/candles-cards"
             className="uppercase text-brookies-primary font-bold text-4xl"
           >
             cards & candles
           </Link>
           <Link
+            onClick={closeDrawer}
             to="/collections/corporate-orders"
             className={`uppercase text-brookies-primary font-bold text-4xl`}
           >

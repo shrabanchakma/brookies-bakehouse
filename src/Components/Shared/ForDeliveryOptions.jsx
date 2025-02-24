@@ -46,13 +46,6 @@ const ForDeliveryOptions = ({ isHomePage }) => {
           >
             cookies
           </Link>
-          <Link
-            onClick={closeDrawer}
-            to="/collections/brownies"
-            className="uppercase text-brookies-primary font-bold text-4xl"
-          >
-            brownies
-          </Link>
 
           <Link
             onClick={closeDrawer}
