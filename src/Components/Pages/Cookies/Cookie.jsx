@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Cookie = ({ cookie }) => {
   return (
-    <div
+    <Link
+      to={`/collections/cookies/${cookie.id}`}
       key={cookie.id}
       className="w-full max-w-xs mx-auto hover:cursor-pointer"
     >
@@ -34,7 +36,7 @@ const Cookie = ({ cookie }) => {
           <p className="text-xs">({cookie.ratings})</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

@@ -6,7 +6,7 @@ import { FaBox, FaStar } from "react-icons/fa";
 import { CiCircleQuestion, CiHeart } from "react-icons/ci";
 import { getCardsCandles } from "../../../Api/utils";
 import SideCards from "./SideCards";
-import Reviews from "./Reviews";
+import Reviews from "../Reviews";
 const starCount = [1, 2, 3, 4, 5];
 const sizeOptions = ['Small (6" )', 'Medium (6" Tall)'];
 const flavourOptions = ["Chocolate", "Vanilla", "Salted Caramel"];
@@ -53,8 +53,8 @@ const pipingColoursOptions = [
 
 const messageColorOptions = ["Red", "Pink", "White"];
 
-const ProductPage = () => {
-  const productData = useLoaderData();
+const CakeDetails = () => {
+  const cakeData = useLoaderData();
   const [cardsCandles, setCardsCandles] = useState([]);
   const getCardsCandlesData = async () => {
     try {
@@ -71,11 +71,11 @@ const ProductPage = () => {
 
   return (
     <Container>
-      <section className=" flex items-start justify-center ">
+      <section className=" flex flex-col lg:flex-row items-start justify-center ">
         {/* form */}
         <div className="h-auto w-full">
           <div className="p-14 ">
-            <img src={productData?.image} alt="" className="rounded-xl" />
+            <img src={cakeData?.image} alt="" className="rounded-xl" />
           </div>
           <div className="text-brookies-primary p-20 py-1 space-y-5 text-sm">
             <p>Store Policy</p>
@@ -98,16 +98,16 @@ const ProductPage = () => {
         </div>
         <div className="text-brookies-primary h-auto w-full grid cols-span-1 pt-28">
           <div className=" w-[20rem] place-self-center">
-            <h1 className="text-3xl font-bold w-2/3"> {productData?.title}</h1>
+            <h1 className="text-3xl font-bold w-2/3"> {cakeData?.title}</h1>
             <p className="text-gray-600 flex items-center gap-2 text-sm ">
               <span className="flex items-center ">
                 {starCount.map((star, idx) => (
                   <FaStar key={idx} className="text-brookies-secondary " />
                 ))}
               </span>
-              {`${productData?.ratings} reviews`}
+              {`${cakeData?.ratings} reviews`}
             </p>
-            <p className="text-sm mt-8">{`$${productData?.price} AUD`}</p>
+            <p className="text-sm mt-8">{`$${cakeData?.price} AUD`}</p>
             <p className="text-sm text-gray-500 ">Tax included.</p>
             <div className="text-sm my-8 mb-20 w-full">
               <p className="mt-4  w-[20rem]">
@@ -272,11 +272,11 @@ const ProductPage = () => {
           <SideCards cardsCandles={cardsCandles} />
         </div>
       </section>
-      <Reviews ratings={productData?.ratings} />
+      <Reviews ratings={cakeData?.ratings} />
     </Container>
   );
 };
 
-ProductPage.propTypes = {};
+CakeDetails.propTypes = {};
 
-export default ProductPage;
+export default CakeDetails;

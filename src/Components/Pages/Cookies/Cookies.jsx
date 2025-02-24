@@ -16,7 +16,7 @@ const Cookies = (props) => {
           );
         }
         const data = await response.json();
-        setCookies(data);
+        setCookies(data.slice(0, 4));
       } catch (err) {
         setError(err.message);
         console.error("Error fetching cookies:", err);
@@ -24,15 +24,12 @@ const Cookies = (props) => {
     };
     fetchCookies();
   }, []);
-  //   if (cookies.length > 0) {
-  //     console.log("cookies are--->", cookies);
-  //   }
   if (error) {
     return <div className="text-red-500">Error: {error}</div>;
   }
   return (
     <div className="w-full mx-auto ">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3  lg:gap-2 xl:gap-0 mt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  lg:gap-2 xl:gap-0 mt-16">
         {cookies &&
           cookies.length > 0 &&
           cookies.map((cookie) => <Cookie key={cookie.id} cookie={cookie} />)}

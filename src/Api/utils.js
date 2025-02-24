@@ -1,4 +1,5 @@
 import { cakesLoader } from "../Loaders/cakesloader";
+import { cookiesLoader } from "../Loaders/cookiesLoader";
 
 // get cake data
 export const getCakeData = async (id) => {
@@ -18,6 +19,22 @@ export const getCardsCandles = async () => {
       throw new Error("Failed to load cards and candles data");
     }
     return await response.json();
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return [];
+  }
+};
+
+// get Cookie Data
+
+export const getCookieData = async (id) => {
+  try {
+    const cookiesData = await cookiesLoader();
+
+    const cookie = cookiesData.find((cookie) => cookie.id === parseInt(id));
+    if (!cookie) throw new Response("Not Found", { status: 404 });
+
+    return cookie;
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];

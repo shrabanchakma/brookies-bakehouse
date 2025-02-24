@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Banner from "./Banner";
 import Marquee from "./Marquee";
 import CookiesSection from "./CookiesSection";
@@ -11,6 +11,9 @@ import FeaturedSection from "./FeaturedSection";
 import VisitUsSection from "./VisitUsSection";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <Banner />

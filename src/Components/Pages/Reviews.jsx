@@ -21,7 +21,7 @@ const Reviews = ({ ratings }) => {
 
   return (
     <div>
-      <div className="grid grid-cols-3 gap-5 text-brookies-primary my-20">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 text-brookies-primary my-20">
         <div className=" grid grid-cols-1 ">
           <p className="text-gray-600 flex items-center gap-2 text-sm place-self-center">
             <Ratings />
