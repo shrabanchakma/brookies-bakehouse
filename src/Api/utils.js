@@ -1,5 +1,6 @@
 import { cakesLoader } from "../Loaders/cakesloader";
 import { cookiesLoader } from "../Loaders/cookiesLoader";
+import { merchLoader } from "../Loaders/merchLoader";
 
 // get cake data
 export const getCakeData = async (id) => {
@@ -26,7 +27,6 @@ export const getCardsCandles = async () => {
 };
 
 // get Cookie Data
-
 export const getCookieData = async (id) => {
   try {
     const cookiesData = await cookiesLoader();
@@ -35,6 +35,21 @@ export const getCookieData = async (id) => {
     if (!cookie) throw new Response("Not Found", { status: 404 });
 
     return cookie;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return [];
+  }
+};
+
+// get Merch Data
+export const getMerchData = async (id) => {
+  try {
+    const merchData = await merchLoader();
+
+    const merch = merchData.find((merchItem) => merchItem.id === parseInt(id));
+    if (!merch) throw new Response("Not Found", { status: 404 });
+
+    return merch;
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];

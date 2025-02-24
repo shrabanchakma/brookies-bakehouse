@@ -1,10 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Merch = ({ merch }) => {
   return (
-    <div className="w-80 hover:cursor-pointer mx-auto ">
+    <Link
+      to={`/collections/merch/${merch?.id}`}
+      className="w-80 hover:cursor-pointer mx-auto "
+    >
       <figure className="relative w-full">
         <img
           src={merch.image}
@@ -28,7 +32,7 @@ const Merch = ({ merch }) => {
           <p className="text-[.8rem]">({merch.ratings.toFixed(1)})</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

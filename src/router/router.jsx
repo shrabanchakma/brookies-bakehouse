@@ -11,8 +11,10 @@ import CardsCandlesPage from "../Components/Pages/CardsCandles/CardsCandlesPage"
 import { cardsCandlesLoader } from "../Loaders/cardsCandlesLoader";
 import CakesPage from "../Components/Pages/Cakes/cakespage";
 import { cakesLoader } from "../Loaders/cakesloader";
-import { getCakeData, getCookieData } from "../Api/utils";
+import { getCakeData, getCookieData, getMerchData } from "../Api/utils";
 import CakeDetails from "../Components/Pages/CakeDetails/CakeDetails";
+import CookieDetails from "../Components/Pages/CookieDetails/CookieDetails";
+import MerchDetails from "../Components/Pages/MerchDetails/MerchDetails";
 
 const router = createBrowserRouter([
   {
@@ -28,39 +30,44 @@ const router = createBrowserRouter([
         path: "/about-us",
         element: <Aboutus />,
       },
+      // cookies
       {
         path: "/collections/cookies",
         element: <CookiesPage />,
         loader: cookiesLoader,
       },
       {
+        path: "/collections/cookies/:id",
+        element: <CookieDetails />,
+        loader: async ({ params }) => await getCookieData(params?.id),
+      },
+      // merch
+      {
         path: "/collections/merch",
         element: <MerchPage />,
         loader: merchLoader,
+      },
+      {
+        path: "/collections/merch/:id",
+        element: <MerchDetails />,
+        loader: async ({ params }) => await getMerchData(params?.id),
       },
       {
         path: "/collections/candles-cards",
         element: <CardsCandlesPage />,
         loader: cardsCandlesLoader,
       },
+      // cakes
       {
         path: "/collections/cakes",
         element: <CakesPage />,
         loader: cakesLoader,
       },
-      // cakes
       {
         path: "/collections/cakes/:id",
         element: <CakeDetails />,
         loader: async ({ params }) => await getCakeData(params?.id),
       },
-
-      // cookies
-      // {
-      //   path: "/collections/cookies/:id",
-      //   element: <ProductPage />,
-      //   loader: async ({ params }) => await getCookieData(params?.id),
-      // },
     ],
   },
 ]);

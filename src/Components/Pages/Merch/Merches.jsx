@@ -14,7 +14,7 @@ const Merches = () => {
           throw new Error(`Failed to fetch merch. Status: ${response.status}`);
         }
         const data = await response.json();
-        setMerches(data);
+        setMerches(data.slice(0, 4));
       } catch (err) {
         setError(err.message);
         console.error("Error fetching merch:", err);
