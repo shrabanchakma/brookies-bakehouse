@@ -4,16 +4,29 @@ import { FaStar } from "react-icons/fa";
 const CakeItem = ({ cake, index, scrollY }) => {
   const isEven = index % 2 === 0;
   const isBestSeller = cake.ratings >= 4.8;
-  // Calculate maximum scroll effect with a cap
-  const maxTransform = 50; // Maximum pixels to move
-  const scrollEffect = Math.min(
-    isEven ? -scrollY * 0.05 : scrollY * 0.05,
-    isEven ? -maxTransform : maxTransform
-  );
+  const maxTransform = 50;
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const scrollEffect =
+    windowWidth > 425
+      ? Math.min(
+          isEven ? -scrollY * 0.2 : scrollY * 0.2,
+          isEven ? -maxTransform : maxTransform
+        )
+      : 0;
   return (
     <div
-      className={`relative group cursor-pointer w-[25rem] place-self-center ${
-        isEven ? "" : "mt-24"
+      className={`relative group cursor-pointer w-[15rem] lg:w-[25rem] place-self-center ${
+        isEven ? "" : "md:mt-24"
       }`}
       style={{
         transform: `translateY(${scrollEffect}px)`,

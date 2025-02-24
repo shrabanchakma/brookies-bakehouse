@@ -7,9 +7,6 @@ import MerchItem from "./MerchItem";
 
 const MerchPage = () => {
   const merch = useLoaderData();
-  const inStockCount = merch.filter((item) => item.inStock).length;
-  const outOfStockCount = merch.filter((item) => !item.inStock).length;
-  const sortedMerch = [...merch];
   const [filters, setFilters] = useState({
     inStock: false,
     outOfStock: false,
@@ -55,12 +52,7 @@ const MerchPage = () => {
 
       {/* Mobile Filter */}
 
-      <MerchFilterMobile
-        filters={filters}
-        setFilters={setFilters}
-        inStockCount={inStockCount}
-        outOfStockCount={outOfStockCount}
-      />
+      <MerchFilterMobile filters={filters} setFilters={setFilters} />
 
       <div className="w-full  min-h-screen mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 mt-16">

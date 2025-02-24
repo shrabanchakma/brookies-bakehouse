@@ -4,69 +4,79 @@
     "title": "Classic Chocolate Cake",
     "price": 24.99,
     "ratings": 4.8,
-    "description": "A rich and moist chocolate cake with a velvety ganache topping."
+    "description": "A rich and moist chocolate cake with a velvety ganache topping.",
+    "inStock": true
   },
   {
     "image": "https://i.ibb.co.com/tMj6GmgX/cake2.jpg",
     "title": "Strawberry Delight Cake",
     "price": 26.99,
     "ratings": 4.7,
-    "description": "A fluffy vanilla cake layered with fresh strawberries and whipped cream."
+    "description": "A fluffy vanilla cake layered with fresh strawberries and whipped cream.",
+    "inStock": false
   },
   {
     "image": "https://i.ibb.co.com/xSK0xMSw/cake3.png",
     "title": "Red Velvet Cake",
     "price": 28.49,
     "ratings": 4.9,
-    "description": "A smooth and delicious red velvet cake with a creamy cheese frosting."
+    "description": "A smooth and delicious red velvet cake with a creamy cheese frosting.",
+    "inStock": true
   },
   {
     "image": "https://i.ibb.co.com/TBVpn84g/cake4.jpg",
     "title": "Blueberry Cheesecake",
     "price": 29.99,
     "ratings": 4.8,
-    "description": "A rich and creamy cheesecake topped with fresh blueberries and syrup."
+    "description": "A rich and creamy cheesecake topped with fresh blueberries and syrup.",
+    "inStock": true
   },
   {
     "image": "https://i.ibb.co.com/G31SQHrC/cake5.jpg",
     "title": "Vanilla Almond Cake",
     "price": 22.99,
     "ratings": 4.6,
-    "description": "A delicate vanilla cake infused with almond flavors and topped with nuts."
+    "description": "A delicate vanilla cake infused with almond flavors and topped with nuts.",
+    "inStock": false
   },
   {
     "image": "https://i.ibb.co.com/prwVxJSQ/cake6.jpg",
     "title": "Black Forest Cake",
     "price": 27.99,
     "ratings": 4.7,
-    "description": "A delightful mix of chocolate, cherries, and fresh cream in every bite."
+    "description": "A delightful mix of chocolate, cherries, and fresh cream in every bite.",
+    "inStock": true
   },
   {
     "image": "https://i.ibb.co.com/ymngQ7cP/cake7.jpg",
     "title": "Carrot Walnut Cake",
     "price": 23.49,
     "ratings": 4.6,
-    "description": "A moist carrot cake with crunchy walnuts and a spiced cream cheese frosting."
+    "description": "A moist carrot cake with crunchy walnuts and a spiced cream cheese frosting.",
+    "inStock": true
   },
   {
     "image": "https://i.ibb.co.com/8LX5DXtQ/cake8.jpg",
     "title": "Lemon Drizzle Cake",
     "price": 21.99,
     "ratings": 4.5,
-    "description": "A zesty lemon cake with a sweet citrus glaze."
+    "description": "A zesty lemon cake with a sweet citrus glaze.",
+    "inStock": false
   },
   {
     "image": "https://i.ibb.co.com/5h48217N/cupcake1.jpg",
     "title": "Chocolate Cupcake",
     "price": 4.99,
     "ratings": 4.9,
-    "description": "A delicious chocolate cupcake topped with rich buttercream frosting."
+    "description": "A delicious chocolate cupcake topped with rich buttercream frosting.",
+    "inStock": true
   },
   {
     "image": "https://i.ibb.co.com/Ng1wCSpm/cupcake2.jpg",
     "title": "Vanilla Sprinkle Cupcake",
     "price": 4.49,
     "ratings": 4.7,
-    "description": "A fluffy vanilla cupcake with colorful sprinkles and creamy frosting."
+    "description": "A fluffy vanilla cupcake with colorful sprinkles and creamy frosting.",
+    "inStock": true
   }
 ]

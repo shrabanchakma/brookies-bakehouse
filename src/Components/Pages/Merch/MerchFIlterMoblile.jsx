@@ -4,12 +4,7 @@ import { IoMdClose } from "react-icons/io";
 import { IoCloseOutline, IoFilterOutline } from "react-icons/io5";
 import { MdOutlineTune } from "react-icons/md";
 
-const MerchFilterMobile = ({
-  filters,
-  setFilters,
-  inStockCount,
-  outOfStockCount,
-}) => {
+const MerchFilterMobile = ({ filters, setFilters }) => {
   const closeDrawer = () => {
     document.getElementById("my-drawer-5").checked = false;
   };
