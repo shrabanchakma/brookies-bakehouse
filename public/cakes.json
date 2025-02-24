@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "image": "https://i.ibb.co.com/ythnW3B/cake1.png",
     "title": "Classic Chocolate Cake",
     "price": 24.99,
@@ -8,6 +9,7 @@
     "inStock": true
   },
   {
+    "id": 2,
     "image": "https://i.ibb.co.com/tMj6GmgX/cake2.jpg",
     "title": "Strawberry Delight Cake",
     "price": 26.99,
@@ -16,6 +18,7 @@
     "inStock": false
   },
   {
+    "id": 3,
     "image": "https://i.ibb.co.com/xSK0xMSw/cake3.png",
     "title": "Red Velvet Cake",
     "price": 28.49,
@@ -24,6 +27,7 @@
     "inStock": true
   },
   {
+    "id": 4,
     "image": "https://i.ibb.co.com/TBVpn84g/cake4.jpg",
     "title": "Blueberry Cheesecake",
     "price": 29.99,
@@ -32,6 +36,7 @@
     "inStock": true
   },
   {
+    "id": 5,
     "image": "https://i.ibb.co.com/G31SQHrC/cake5.jpg",
     "title": "Vanilla Almond Cake",
     "price": 22.99,
@@ -40,6 +45,7 @@
     "inStock": false
   },
   {
+    "id": 6,
     "image": "https://i.ibb.co.com/prwVxJSQ/cake6.jpg",
     "title": "Black Forest Cake",
     "price": 27.99,
@@ -48,6 +54,7 @@
     "inStock": true
   },
   {
+    "id": 7,
     "image": "https://i.ibb.co.com/ymngQ7cP/cake7.jpg",
     "title": "Carrot Walnut Cake",
     "price": 23.49,
@@ -56,6 +63,7 @@
     "inStock": true
   },
   {
+    "id": 8,
     "image": "https://i.ibb.co.com/8LX5DXtQ/cake8.jpg",
     "title": "Lemon Drizzle Cake",
     "price": 21.99,
@@ -64,6 +72,7 @@
     "inStock": false
   },
   {
+    "id": 9,
     "image": "https://i.ibb.co.com/5h48217N/cupcake1.jpg",
     "title": "Chocolate Cupcake",
     "price": 4.99,
@@ -72,6 +81,7 @@
     "inStock": true
   },
   {
+    "id": 10,
     "image": "https://i.ibb.co.com/Ng1wCSpm/cupcake2.jpg",
     "title": "Vanilla Sprinkle Cupcake",
     "price": 4.49,

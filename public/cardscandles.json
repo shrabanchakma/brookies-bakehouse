@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "image": "https://i.ibb.co.com/fzdGC3tj/c1.jpg",
     "title": "Elegant Greeting Card",
     "price": 5.99,
@@ -8,6 +9,7 @@
     "ratings": 4.7
   },
   {
+    "id": 2,
     "image": "https://i.ibb.co.com/JjN9BySR/c2.jpg",
     "title": "Birthday Wishes Card",
     "price": 4.99,
@@ -16,6 +18,7 @@
     "ratings": 4.5
   },
   {
+    "id": 3,
     "image": "https://i.ibb.co.com/bjtK0nth/c3.jpg",
     "title": "Anniversary Card",
     "price": 6.99,
@@ -24,6 +27,7 @@
     "ratings": 4.8
   },
   {
+    "id": 4,
     "image": "https://i.ibb.co.com/mFqns12W/c4.jpg",
     "title": "Thank You Card",
     "price": 3.99,
@@ -32,6 +36,7 @@
     "ratings": 4.6
   },
   {
+    "id": 5,
     "image": "https://i.ibb.co.com/JR1JgzQS/candle1.png",
     "title": "Vanilla Scented Candle",
     "price": 12.99,
@@ -40,6 +45,7 @@
     "ratings": 4.9
   },
   {
+    "id": 6,
     "image": "https://i.ibb.co.com/xqZSC0w8/candle2.png",
     "title": "Lavender Aromatherapy Candle",
     "price": 14.99,
@@ -48,6 +54,7 @@
     "ratings": 4.7
   },
   {
+    "id": 7,
     "image": "https://i.ibb.co.com/KxSszySY/candle3.png",
     "title": "Rose Petal Candle",
     "price": 13.49,
@@ -56,6 +63,7 @@
     "ratings": 4.8
   },
   {
+    "id": 8,
     "image": "https://i.ibb.co.com/7xJsYtdw/candle4.png",
     "title": "Citrus Burst Candle",
     "price": 11.99,
@@ -64,6 +72,7 @@
     "ratings": 4.6
   },
   {
+    "id": 9,
     "image": "https://i.ibb.co.com/HLGz6v2b/candle5.png",
     "title": "Ocean Breeze Candle",
     "price": 15.99,
@@ -72,6 +81,7 @@
     "ratings": 4.9
   },
   {
+    "id": 10,
     "image": "https://i.ibb.co.com/dwZ37HM4/candle6.png",
     "title": "Coffee Bean Candle",
     "price": 13.99,
@@ -80,6 +90,7 @@
     "ratings": 4.7
   },
   {
+    "id": 11,
     "image": "https://i.ibb.co.com/bgDjxwyW/candle7.png",
     "title": "Sandalwood Meditation Candle",
     "price": 16.49,

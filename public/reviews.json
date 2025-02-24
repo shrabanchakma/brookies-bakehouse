@@ -1,0 +1,128 @@
+[
+  {
+    "id": 1,
+    "name": "Nafiz Ahmed",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "Amazing quality, highly recommend!",
+    "timeAgo": "2 days ago",
+    "avatar": "https://i.ibb.co/50z9XYq/nafiz.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Shraban Chakma",
+    "isVerified": true,
+    "rating": 4,
+    "comment": "Good product, but delivery was a bit slow.",
+    "timeAgo": "5 days ago",
+    "avatar": "https://i.ibb.co/F4qrLVT7/shraban.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Maria Gomez",
+    "isVerified": false,
+    "rating": 5,
+    "comment": "Exceeded my expectations! Will buy again.",
+    "timeAgo": "1 week ago",
+    "avatar": "https://i.ibb.co/xKfY6nYp/maria.jpg"
+  },
+  {
+    "id": 4,
+    "name": "David Williams",
+    "isVerified": true,
+    "rating": 4.5,
+    "comment": "Great customer service and high-quality product!",
+    "timeAgo": "3 days ago",
+    "avatar": "https://i.ibb.co/svTKzn1j/shraban2.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Sophia Rodriguez",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "Absolutely loved it! Worth every penny.",
+    "timeAgo": "6 days ago",
+    "avatar": "https://i.ibb.co/F4qrLVT7/shraban.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Liam Johnson",
+    "isVerified": false,
+    "rating": 4,
+    "comment": "The product is good, but packaging could be better.",
+    "timeAgo": "1 day ago",
+    "avatar": "https://i.ibb.co/xKfY6nYp/maria.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Olivia Martinez",
+    "isVerified": true,
+    "rating": 4.8,
+    "comment": "Fantastic experience, would recommend!",
+    "timeAgo": "8 hours ago",
+    "avatar": "https://i.ibb.co/50z9XYq/nafiz.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Ethan Brown",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "The quality exceeded my expectations. Five stars!",
+    "timeAgo": "4 days ago",
+    "avatar": "https://i.ibb.co/svTKzn1j/shraban2.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Ava Wilson",
+    "isVerified": false,
+    "rating": 3.5,
+    "comment": "Product was decent but took too long to arrive.",
+    "timeAgo": "10 days ago",
+    "avatar": "https://i.ibb.co/F4qrLVT7/shraban.jpg"
+  },
+  {
+    "id": 10,
+    "name": "James Anderson",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "I am extremely satisfied. Will purchase again.",
+    "timeAgo": "2 weeks ago",
+    "avatar": "https://i.ibb.co/xKfY6nYp/maria.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Isabella Thomas",
+    "isVerified": true,
+    "rating": 4.9,
+    "comment": "Superb quality, loved the design and packaging!",
+    "timeAgo": "12 hours ago",
+    "avatar": "https://i.ibb.co/svTKzn1j/shraban2.jpg"
+  },
+  {
+    "id": 12,
+    "name": "William Garcia",
+    "isVerified": false,
+    "rating": 4.2,
+    "comment": "Would have given 5 stars if the shipping was faster.",
+    "timeAgo": "3 days ago",
+    "avatar": "https://i.ibb.co/50z9XYq/nafiz.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Mia Harris",
+    "isVerified": true,
+    "rating": 5,
+    "comment": "One of the best purchases I've made!",
+    "timeAgo": "6 days ago",
+    "avatar": "https://i.ibb.co/F4qrLVT7/shraban.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Alexander Clark",
+    "isVerified": true,
+    "rating": 4.7,
+    "comment": "Great product, but wish they had more color options.",
+    "timeAgo": "1 week ago",
+    "avatar": "https://i.ibb.co/xKfY6nYp/maria.jpg"
+  }
+]

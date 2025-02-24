@@ -10,7 +10,7 @@ const ForPickupOptions = ({ isHomePage }) => {
   };
 
   return (
-    <div className="drawer z-10">
+    <div className="drawer ">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content flex flex-col items-center justify-center">
         {/* Page content here */}
@@ -24,14 +24,14 @@ const ForPickupOptions = ({ isHomePage }) => {
           <RiArrowDropDownLine size={24} />
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side z-10">
         <label
           htmlFor="my-drawer-3"
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
 
-        <ul className="menu bg-brookies-secondary text-base-content min-h-full w-2/5 py-20 pl-10 pt-10 space-y-10">
+        <ul className="menu bg-brookies-secondary text-base-content min-h-full w-2/5 py-20 pl-10 pt-10 space-y-10 ">
           {/* Sidebar content here */}
           <div
             onClick={closeDrawer}

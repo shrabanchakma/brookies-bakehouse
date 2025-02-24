@@ -11,6 +11,8 @@ import CardsCandlesPage from "../Components/Pages/CardsCandles/CardsCandlesPage"
 import { cardsCandlesLoader } from "../Loaders/cardsCandlesLoader";
 import CakesPage from "../Components/Pages/Cakes/cakespage";
 import { cakesLoader } from "../Loaders/cakesloader";
+import ProductPage from "../Components/Pages/ProductPage/ProductPage";
+import { getCakeData } from "../Api/utils";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,12 @@ const router = createBrowserRouter([
         path: "/collections/cakes",
         element: <CakesPage />,
         loader: cakesLoader,
+      },
+      // product page
+      {
+        path: "/collections/cakes/:id",
+        element: <ProductPage />,
+        loader: async ({ params }) => await getCakeData(params?.id),
       },
     ],
   },

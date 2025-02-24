@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CakeItem = ({ cake, index, scrollY }) => {
   const isEven = index % 2 === 0;
@@ -24,7 +25,8 @@ const CakeItem = ({ cake, index, scrollY }) => {
         )
       : 0;
   return (
-    <div
+    <Link
+      to={`/collections/cakes/${cake?.id}`}
       className={`relative group cursor-pointer w-[15rem] lg:w-[25rem] place-self-center ${
         isEven ? "" : "md:mt-24"
       }`}
@@ -62,7 +64,7 @@ const CakeItem = ({ cake, index, scrollY }) => {
           <p className="text-[.8rem]">({cake.ratings.toFixed(1)})</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
