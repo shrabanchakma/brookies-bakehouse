@@ -11,9 +11,6 @@ import FeaturedSection from "./FeaturedSection";
 import VisitUsSection from "./VisitUsSection";
 
 const Home = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div>
       <Banner />

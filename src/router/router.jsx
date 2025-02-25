@@ -11,10 +11,16 @@ import CardsCandlesPage from "../Components/Pages/CardsCandles/CardsCandlesPage"
 import { cardsCandlesLoader } from "../Loaders/cardsCandlesLoader";
 import CakesPage from "../Components/Pages/Cakes/cakespage";
 import { cakesLoader } from "../Loaders/cakesloader";
-import { getCakeData, getCookieData, getMerchData } from "../Api/utils";
+import {
+  getCakeData,
+  getCardsCandleData,
+  getCookieData,
+  getMerchData,
+} from "../Api/utils";
 import CakeDetails from "../Components/Pages/CakeDetails/CakeDetails";
 import CookieDetails from "../Components/Pages/CookieDetails/CookieDetails";
 import MerchDetails from "../Components/Pages/MerchDetails/MerchDetails";
+import CardsCandleDetails from "../Components/Pages/CardsCandleDetails/CardsCandleDetails";
 
 const router = createBrowserRouter([
   {
@@ -52,10 +58,16 @@ const router = createBrowserRouter([
         element: <MerchDetails />,
         loader: async ({ params }) => await getMerchData(params?.id),
       },
+      // cards and candles
       {
         path: "/collections/candles-cards",
         element: <CardsCandlesPage />,
         loader: cardsCandlesLoader,
+      },
+      {
+        path: "/collections/candles-cards/:id",
+        element: <CardsCandleDetails />,
+        loader: async ({ params }) => await getCardsCandleData(params?.id),
       },
       // cakes
       {

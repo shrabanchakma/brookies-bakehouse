@@ -1,4 +1,5 @@
 import { cakesLoader } from "../Loaders/cakesloader";
+import { cardsCandlesLoader } from "../Loaders/cardsCandlesLoader";
 import { cookiesLoader } from "../Loaders/cookiesLoader";
 import { merchLoader } from "../Loaders/merchLoader";
 
@@ -50,6 +51,23 @@ export const getMerchData = async (id) => {
     if (!merch) throw new Response("Not Found", { status: 404 });
 
     return merch;
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return [];
+  }
+};
+
+// get cards candles Data
+export const getCardsCandleData = async (id) => {
+  try {
+    const cardsCandlesData = await cardsCandlesLoader();
+
+    const cardsCandle = cardsCandlesData.find(
+      (cardsCandleItem) => cardsCandleItem.id === parseInt(id)
+    );
+    if (!cardsCandle) throw new Response("Not Found", { status: 404 });
+
+    return cardsCandle;
   } catch (error) {
     console.error("Error fetching data:", error);
     return [];

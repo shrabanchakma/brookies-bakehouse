@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Postcard = ({ postcard }) => {
   return (
-    <div key={postcard.id} className="w-auto xsm:w-80 hover:cursor-pointer">
+    <Link
+      to={`/collections/candles-cards/${postcard?.id}`}
+      key={postcard.id}
+      className="w-auto xsm:w-80 hover:cursor-pointer"
+    >
       <figure className="relative w-9/12 mx-auto">
         <div className="relative">
           <img
@@ -27,7 +32,7 @@ const Postcard = ({ postcard }) => {
           <p className="text-[.8rem]">({postcard.ratings})</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
