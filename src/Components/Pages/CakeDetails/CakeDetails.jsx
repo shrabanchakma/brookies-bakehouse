@@ -7,6 +7,8 @@ import { CiCircleQuestion, CiHeart } from "react-icons/ci";
 import { getCardsCandles } from "../../../Api/utils";
 import SideCards from "./SideCards";
 import Reviews from "../Reviews";
+import Cookies from "js-cookie";
+import { toast } from "react-toastify";
 const starCount = [1, 2, 3, 4, 5];
 const sizeOptions = ['Small (6" )', 'Medium (6" Tall)'];
 const flavourOptions = ["Chocolate", "Vanilla", "Salted Caramel"];
@@ -68,6 +70,20 @@ const CakeDetails = () => {
     window.scrollTo(0, 0);
     getCardsCandlesData();
   }, []);
+
+  const addToCart = (id, type) => {
+    let cart = Cookies.get("cart")
+      ? JSON.parse(Cookies.get("cart"))
+      : { cookies: [], cakes: [], merch: [], cards: [] };
+
+    if (!cart[type].includes(id)) {
+      cart[type].push(id);
+      Cookies.set("cart", JSON.stringify(cart), { expires: 7 });
+      toast.success("Added to Cart!");
+    } else {
+      toast.error("Item is already in the cart");
+    }
+  };
 
   return (
     <Container>
@@ -217,7 +233,10 @@ const CakeDetails = () => {
                   />
                 </label>
               </div>
-              <button className="text-slate-100 bg-brookies-primary w-full rounded-lg py-3 px-4 hover:bg-brookies-secondary transition duration-150 ease-in-out ">
+              <button
+                onClick={() => addToCart(cookieData?.id, "cake")}
+                className="text-slate-100 bg-brookies-primary w-full rounded-lg py-3 px-4 hover:bg-brookies-secondary transition duration-150 ease-in-out "
+              >
                 Add to cart
               </button>
             </div>

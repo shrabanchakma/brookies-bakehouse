@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import Container from "../../Shared/Container";
 import CardsCandlesFilter from "./CardsCandlesFilter";
 import CardsCandlesItem from "./CardsCandlesItem";
+import { Helmet } from "react-helmet-async";
 
 const CardsCandlesPage = () => {
   const items = useLoaderData();
@@ -46,6 +47,9 @@ const CardsCandlesPage = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Candles & Cards</title>
+      </Helmet>
       <div className="mx-5 xl:mx-0 my-10 text-brookies-primary">
         <h2 className=" text-5xl font-bold py-8">Cards & Candles</h2>
         <p className=" text-[14px]">

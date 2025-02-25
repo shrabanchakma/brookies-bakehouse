@@ -9,10 +9,14 @@ import Carousel from "./Carousel";
 import ClassesSection from "./ClassesSection";
 import FeaturedSection from "./FeaturedSection";
 import VisitUsSection from "./VisitUsSection";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Brookies Bakehouse</title>
+      </Helmet>
       <Banner />
       <Marquee />
       <Container>

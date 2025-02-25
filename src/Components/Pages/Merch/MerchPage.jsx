@@ -4,6 +4,7 @@ import Container from "../../Shared/Container";
 import MerchFilter from "./MerchFilter";
 import MerchFilterMobile from "./MerchFIlterMoblile";
 import MerchItem from "./MerchItem";
+import { Helmet } from "react-helmet-async";
 
 const MerchPage = () => {
   const merch = useLoaderData();
@@ -43,6 +44,9 @@ const MerchPage = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Merch</title>
+      </Helmet>
       <div className="mx-5 xl:mx-0 my-10">
         <h2 className="text-brookies-primary text-5xl font-bold py-8">Merch</h2>
         <p className="text-brookies-primary text-[14px]">

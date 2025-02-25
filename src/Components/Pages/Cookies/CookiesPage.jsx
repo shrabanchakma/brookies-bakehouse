@@ -5,6 +5,7 @@ import CookiesFilter from "./CookiesFilter";
 import Cookie from "./Cookie";
 import { LuArrowLeft, LuArrowRight } from "react-icons/lu";
 import CookiesFilterMobile from "./CookiesFilterMobile";
+import { Helmet } from "react-helmet-async";
 
 const CookiesPage = () => {
   const cookies = useLoaderData();
@@ -53,6 +54,9 @@ const CookiesPage = () => {
 
   return (
     <Container>
+      <Helmet>
+        <title>Delivery</title>
+      </Helmet>
       <div className="mx-5 xl:mx-0 my-10">
         <h2 className="text-brookies-primary text-5xl font-bold py-8">
           Delivery

@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import CakeItem from "./CakeItem";
 import CakeFilter from "./CakeFilter";
 import Container from "../../Shared/Container";
+import { Helmet } from "react-helmet-async";
 
 const CakesPage = () => {
   const cakes = useLoaderData();
@@ -51,6 +52,9 @@ const CakesPage = () => {
   const filteredCakes = applySortingAndFiltering();
   return (
     <Container>
+      <Helmet>
+        <title>Cakes</title>
+      </Helmet>
       <div className="mx-auto px-4 py-8">
         <div className="mx-5 xl:mx-0 my-10 text-brookies-primary">
           <h2 className="text-5xl font-bold py-8">Cakes</h2>

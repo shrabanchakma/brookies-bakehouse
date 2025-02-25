@@ -37,14 +37,15 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a
+              <Link
+                to={"/pages/cart"}
                 href="#cart"
                 className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
                   isHomePage ? "" : "text-brookies-primary"
                 }`}
               >
                 {`Cart(0)`}
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

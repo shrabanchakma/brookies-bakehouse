@@ -5,7 +5,9 @@ import { FaStar } from "react-icons/fa";
 import Reviews from "../Reviews";
 import SideCards from "../CakeDetails/SideCards";
 import { getCardsCandles } from "../../../Api/utils";
-
+import { Helmet } from "react-helmet-async";
+import { toast, ToastContainer } from "react-toastify";
+import Cookies from "js-cookie";
 const starCount = [1, 2, 3, 4, 5];
 
 const MerchDetails = () => {
@@ -15,8 +17,24 @@ const MerchDetails = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const addToCart = (id, type) => {
+    let cart = Cookies.get("cart")
+      ? JSON.parse(Cookies.get("cart"))
+      : { cookies: [], cakes: [], merch: [], cards: [] };
+
+    if (!cart[type].includes(id)) {
+      cart[type].push(id);
+      Cookies.set("cart", JSON.stringify(cart), { expires: 7 });
+      toast.success("Added to Cart!");
+    } else {
+      toast.error("Item is already in the cart");
+    }
+  };
   return (
     <Container>
+      <Helmet>
+        <title>{merchData?.name}</title>
+      </Helmet>
       <section className="flex flex-col lg:flex-row items-start justify-center">
         <div className="h-auto w-full">
           <div className="p-14">
@@ -60,13 +78,17 @@ const MerchDetails = () => {
                 with the finest materials, to ensure comfort and durability.
               </p>
             </div>
-            <button className="text-slate-100 bg-brookies-primary w-full rounded-lg py-3 px-4 hover:bg-brookies-secondary transition duration-150 ease-in-out">
+            <button
+              onClick={() => addToCart(cookieData?.id, "merch")}
+              className="text-slate-100 bg-brookies-primary w-full rounded-lg py-3 px-4 hover:bg-brookies-secondary transition duration-150 ease-in-out"
+            >
               Add to cart
             </button>
           </div>
         </div>
       </section>
       <Reviews ratings={merchData?.ratings} />
+      <ToastContainer />
     </Container>
   );
 };

@@ -22,6 +22,7 @@ import CookieDetails from "../Components/Pages/CookieDetails/CookieDetails";
 import MerchDetails from "../Components/Pages/MerchDetails/MerchDetails";
 import CardsCandleDetails from "../Components/Pages/CardsCandleDetails/CardsCandleDetails";
 import ContactSection from "../Components/Pages/ContactSection/ContactSection";
+import Cart from "../Components/Pages/Cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -84,6 +85,10 @@ const router = createBrowserRouter([
       {
         path: "/pages/contact",
         element: <ContactSection />,
+      },
+      {
+        path: "/pages/cart",
+        element: <Cart />,
       },
     ],
   },

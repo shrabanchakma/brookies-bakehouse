@@ -1,10 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SideCardItem = ({ item }) => {
   return (
-    <div className="w-full hover:cursor-pointer mx-auto ">
+    <Link
+      to={`/collections/candles-cards/${item?.id}`}
+      className="w-full hover:cursor-pointer mx-auto "
+    >
       <figure className="relative w-[8rem] ">
         <img src={item.image} alt={item.name} className="object-cover" />
       </figure>
@@ -24,7 +28,7 @@ const SideCardItem = ({ item }) => {
           <p className="text-[.8rem]">({item.ratings.toFixed(1)})</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

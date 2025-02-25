@@ -6,7 +6,9 @@ import Container from "../../Shared/Container";
 import SideCards from "../CakeDetails/SideCards";
 import Reviews from "../Reviews";
 import { getCardsCandles } from "../../../Api/utils";
-
+import { Helmet } from "react-helmet-async";
+import Cookies from "js-cookie";
+import { toast, ToastContainer } from "react-toastify";
 const starCount = [1, 2, 3, 4, 5];
 const flavorOptions = [
   "Chocolate Chip",
@@ -39,9 +41,25 @@ const CookieDetails = () => {
     window.scrollTo(0, 0);
     getCardsCandlesData();
   }, []);
+  const addToCart = (id, type) => {
+    let cart = Cookies.get("cart")
+      ? JSON.parse(Cookies.get("cart"))
+      : { cookies: [], cakes: [], merch: [], cards: [] };
+
+    if (!cart[type].includes(id)) {
+      cart[type].push(id);
+      Cookies.set("cart", JSON.stringify(cart), { expires: 7 });
+      toast.success("Added to Cart!");
+    } else {
+      toast.error("Item is already in the cart");
+    }
+  };
 
   return (
     <Container>
+      <Helmet>
+        <title>Brookies Cookies 🍪</title>
+      </Helmet>
       <section className="flex flex-col lg:flex-row items-start justify-center text-brookies-primary">
         <div className="h-auto w-full">
           <div className="p-14">
@@ -73,7 +91,7 @@ const CookieDetails = () => {
             <p className="text-gray-600 flex items-center gap-2 text-sm">
               <span className="flex items-center">
                 {starCount.map((star, idx) => (
-                  <FaStar key={idx} className="text-secondary" />
+                  <FaStar key={idx} className="text-brookies-secondary" />
                 ))}
               </span>
               {`${cookieData?.ratings} reviews`}
@@ -119,7 +137,10 @@ const CookieDetails = () => {
                 </select>
               </div>
 
-              <button className="text-white bg-brookies-primary  w-full rounded-lg py-3 px-4 hover:bg-brookies-secondary transition duration-150 ease-in-out">
+              <button
+                onClick={() => addToCart(cookieData?.id, "cookies")}
+                className="text-white bg-brookies-primary  w-full rounded-lg py-3 px-4 hover:bg-brookies-secondary transition duration-150 ease-in-out"
+              >
                 Add to cart
               </button>
             </div>
@@ -171,6 +192,7 @@ const CookieDetails = () => {
         </div>
       </section>
       <Reviews ratings={cookieData?.ratings} />
+      <ToastContainer />
     </Container>
   );
 };
