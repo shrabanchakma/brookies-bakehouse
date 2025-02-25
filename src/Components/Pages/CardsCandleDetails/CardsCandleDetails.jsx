@@ -40,7 +40,7 @@ const CardsCandleDetails = () => {
 
         <div className="text-brookies-primary h-auto w-full grid cols-span-1 pt-28">
           <div className="w-[20rem] place-self-center">
-            <h1 className="text-3xl font-bold w-2/3">{candleData?.name}</h1>
+            <h1 className="text-3xl font-bold w-2/3">{candleData?.title}</h1>
             <p className="text-gray-600 flex items-center gap-2 text-sm">
               <span className="flex items-center">
                 {starCount.map((star, idx) => (

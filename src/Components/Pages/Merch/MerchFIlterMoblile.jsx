@@ -47,7 +47,7 @@ const MerchFilterMobile = ({ filters, setFilters }) => {
           <MdOutlineTune size={20} /> <span>Filter & Sort</span>
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side z-10">
         <label
           htmlFor="my-drawer-5"
           aria-label="close sidebar"

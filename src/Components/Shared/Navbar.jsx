@@ -26,15 +26,15 @@ const Navbar = () => {
             <ForDeliveryOptions isHomePage={isHomePage} />
             <ForPickupOptions isHomePage={isHomePage} />
             <li>
-              <a
+              <Link
+                to={"/pages/contact"}
                 href="#contact"
                 className={`hover:text-gray-600 flex items-center font-bold uppercase text-[.9rem] cursor-pointer ${
                   isHomePage ? "" : "text-brookies-primary"
                 }`}
               >
                 Contact
-                <RiArrowDropDownLine size={24} />
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -43,8 +43,7 @@ const Navbar = () => {
                   isHomePage ? "" : "text-brookies-primary"
                 }`}
               >
-                Cart
-                <RiArrowDropDownLine size={24} />
+                {`Cart(0)`}
               </a>
             </li>
           </ul>

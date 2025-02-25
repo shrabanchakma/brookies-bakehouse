@@ -54,7 +54,7 @@ const CardsCandlesFilter = ({
           <MdOutlineTune size={20} /> <span>Filter & Sort</span>
         </label>
       </div>
-      <div className="drawer-side">
+      <div className="drawer-side z-10">
         <label
           htmlFor="cards-candles-drawer"
           className="drawer-overlay"

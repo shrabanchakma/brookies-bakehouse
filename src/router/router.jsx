@@ -21,6 +21,7 @@ import CakeDetails from "../Components/Pages/CakeDetails/CakeDetails";
 import CookieDetails from "../Components/Pages/CookieDetails/CookieDetails";
 import MerchDetails from "../Components/Pages/MerchDetails/MerchDetails";
 import CardsCandleDetails from "../Components/Pages/CardsCandleDetails/CardsCandleDetails";
+import ContactSection from "../Components/Pages/ContactSection/ContactSection";
 
 const router = createBrowserRouter([
   {
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
         path: "/collections/cakes/:id",
         element: <CakeDetails />,
         loader: async ({ params }) => await getCakeData(params?.id),
+      },
+      {
+        path: "/pages/contact",
+        element: <ContactSection />,
       },
     ],
   },
